@@ -41,7 +41,7 @@ public class WebConfig
                 .cors(customizer -> customizer.configurationSource(request -> {
                     CorsConfiguration corsConfiguration = new CorsConfiguration();
                     corsConfiguration.setAllowCredentials(true);
-                    corsConfiguration.addAllowedOrigin("http://localhost:9618");
+                    corsConfiguration.addAllowedOrigin("https://indiachronicles.netlify.app");
                     corsConfiguration.addAllowedHeader("*");
                     corsConfiguration.addAllowedMethod("*");
                     return corsConfiguration;
@@ -58,7 +58,7 @@ public class WebConfig
             public void addCorsMappings(CorsRegistry registry)
             {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:9618")
+                        .allowedOrigins("https://indiachronicles.netlify.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
