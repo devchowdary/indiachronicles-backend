@@ -1,6 +1,6 @@
 # Option 1: Multi-Stage Build
 # This stage builds the JAR file as part of the Docker image creation process.
-FROM maven:3.8.6-openjdk-17 AS build
+FROM maven:3.8.3-openjdk-17 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
