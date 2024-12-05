@@ -30,7 +30,8 @@ public class WebConfig
                         "/user/delete","user/update","tour-details/create","tour-details/update/{id}",
                         "/monuments/add-monument","monuments/monument/{id}","monuments/display-monuments","monuments/delete/{id}",
                         "/monuments/update/{id}",
-                        "hotels/add-hotel","hotels/delete-hotel/{id}","hotels/update-hotel/{id}","hotels/display-hotels").permitAll()
+                        "hotels/add-hotel","hotels/delete-hotel/{id}","hotels/update-hotel/{id}","hotels/display-hotels","test").permitAll()
+
                 .requestMatchers("/user/profile").authenticated()// Allow these endpoints
                 .anyRequest().authenticated() // Protect all other requests
                 .and()
