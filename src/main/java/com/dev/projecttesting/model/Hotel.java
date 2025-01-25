@@ -30,8 +30,7 @@ public class Hotel {
 
     private String tv;
 
-    @ElementCollection
-    private List<String> images;
+    private String images;
 
     // Getters and Setters
     public Long getId() {
@@ -106,11 +105,11 @@ public class Hotel {
         this.tv = tv;
     }
 
-    public List<String> getImages() {
+    public String getImages() {
         return images;
     }
 
-    public void setImages(List<String> images) {
+    public void setImages(String images) {
         this.images = images;
     }
 }
